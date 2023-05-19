@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    <a class="btn btn-outline-info" href="{{ route('course.create') }}">Register for Course</a>
                 </div>
             </div>
         </div>

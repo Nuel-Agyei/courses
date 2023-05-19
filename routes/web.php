@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CourseController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,11 +14,16 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Auth::routes();
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('course/index', [CourseController::class, 'index'])->name('course.index');
+Route::get('course/create', [CourseController::class, 'create'])->name('course.create');
+Route::post('course/store', [CourseController::class, 'store'])->name('course.store');
+Route::delete('course/delete',[CourseController::class, 'delete'] )->name('course.delete');

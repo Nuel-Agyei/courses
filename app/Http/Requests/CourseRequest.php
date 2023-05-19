@@ -4,14 +4,14 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CourseRequest extends FormRequest
+class courseRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
      */
     public function authorize(): bool
     {
-        return false;
+        return true; // or Auth::check();
     }
 
     /**
@@ -22,7 +22,10 @@ class CourseRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'course' => 'string',
+            'start' => 'required',
+            'end' => 'required',
+            'price' => 'integer',
         ];
     }
 }

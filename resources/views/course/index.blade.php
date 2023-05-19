@@ -20,8 +20,8 @@
                                         <tr>
                                             <th scope="col">Course</th>
                                             <th scope="col">Description</th>
-                                            <th scope="col">Duration</th>
-                                            <th scope="col">Price</th>
+                                            <th scope="col">Start</th>
+                                            <th scope="col">End</th>
                                             <th scope="col">Action</th>
                                         </tr>
                                     </tbody>
@@ -32,7 +32,8 @@
                                         <tr>
                                             <td> {{ $course->course }} </td>
                                             <td> {{__('This supposed to be course desription')}} </td>
-                                            <td> {{ $course->duration }} </td>
+                                            <td> {{ $course->start }} </td>
+                                            <td> {{ $course->end }} </td>
                                             <td> {{ $course->price }} </td>
                                             <td>
                                                 <a class="btn m-1 btn-sm btn-outline-primary" href="">Edit</a>

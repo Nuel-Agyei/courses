@@ -19,15 +19,19 @@
                             </div>
                         @endif
 
-                        <form method="POST" action="{{ route('student.store') }}">
+                        <form method="POST" action="{{ route('course.store') }}">
                             @csrf
                             <div class="mb-3">
                                 <label class="form-label">Course</label>
-                                <input type="text" name='name' class="form-control">
+                                <input type="text" name='course' class="form-control">
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Duration</label>
-                                <input type="text" name='phone' class="form-control">
+                                <label class="date">Start</label>
+                                <input type="date" name='duration' class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="date">End</label>
+                                <input type="date" name='duration' class="form-control">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Price</label>
