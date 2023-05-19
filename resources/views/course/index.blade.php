@@ -31,12 +31,12 @@
                                     @foreach ($course as $course)
                                         <tr>
                                             <td> {{ $course->course }} </td>
-                                            <td> {{__('This supposed to be course desription')}} </td>
+                                            <td> {{$course->description}} </td>
                                             <td> {{ $course->start }} </td>
                                             <td> {{ $course->end }} </td>
                                             <td> {{ $course->price }} </td>
                                             <td>
-                                                <a class="btn m-1 btn-sm btn-outline-primary" href="">Edit</a>
+                                                <a class="btn m-1 btn-sm btn-outline-primary" href="{{route('course.edit')}}">Edit</a>
                                                 <form method="post" action="{{ route('course.delete') }}" class="inner">
                                                     @csrf
                                                     @method('DELETE')
@@ -53,8 +53,6 @@
                             <h2>No children registered</h2>
                             <a class="btn btn-sm btn-outline-primary" href="{{route('course.create')}}">Register for Course</a><br>
                         @endif
-                        <a class="btn btn-sm btn-outline-primary" href="{{route('course.create')}}">Register for Course</a><br>
-
                     </div>
                 </div>
             </div>

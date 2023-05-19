@@ -25,6 +25,7 @@ class courseRequest extends FormRequest
             'course' => 'string',
             'start' => 'required',
             'end' => 'required',
+            'description' => 'string|required',
             'price' => 'integer',
         ];
     }

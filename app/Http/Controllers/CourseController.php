@@ -22,12 +22,17 @@ class CourseController extends Controller
         return view('course.create');
     }
 
+    public function edit()
+    {
+        return view('course.edit');
+    }
 
     public function store(Request $request)
     {
        try {
         Course::create([
             'course' => $request->course,
+            'description' => $request->description,
             'start' => $request->start,
             'end' => $request->end,
             'price' => $request->price,
@@ -53,5 +58,6 @@ class CourseController extends Controller
         $request->session()->flash('alert-info', 'Course deleted successfully!');
         return to_route('course.index');
     }
+    
 
 }

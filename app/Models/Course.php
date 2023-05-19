@@ -9,7 +9,7 @@ class Course extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['course', 'start', 'end', 'price'];
+    protected $fillable = ['course', 'start', 'end', 'description', 'price'];
 
 	/**
 	 * @return mixed
@@ -18,12 +18,5 @@ class Course extends Model
 		return $this->fillable;
 	}
 	
-	/**
-	 * @param mixed $fillable 
-	 * @return self
-	 */
-	public function setFillable($fillable): self {
-		$this->fillable = $fillable;
-		return $this;
-	}
+	
 }

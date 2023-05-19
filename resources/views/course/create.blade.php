@@ -25,17 +25,25 @@
                                 <label class="form-label">Course</label>
                                 <input type="text" name='course' class="form-control">
                             </div>
+                            
                             <div class="mb-3">
-                                <label class="date">Start</label>
-                                <input type="date" name='duration' class="form-control">
+                                <label class="form-label">Description</label>
+                                <input type="text" name='description' class="form-control">
                             </div>
+
                             <div class="mb-3">
-                                <label class="date">End</label>
-                                <input type="date" name='duration' class="form-control">
+                                <label class="form-label">Start</label>
+                                <input type="date" name='start' class="form-control">
                             </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">End</label>
+                                <input type="date" name='end' class="form-control">
+                            </div>
+                           
                             <div class="mb-3">
                                 <label class="form-label">Price</label>
-                                <input type="text" name='email' class="form-control">
+                                <input type="text" name='price' class="form-control">
                             </div>
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </form>

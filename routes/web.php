@@ -25,5 +25,6 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::get('course/index', [CourseController::class, 'index'])->name('course.index');
 Route::get('course/create', [CourseController::class, 'create'])->name('course.create');
+Route::get('course/edit', [CourseController::class, 'edit'])->name('course.edit');
 Route::post('course/store', [CourseController::class, 'store'])->name('course.store');
 Route::delete('course/delete',[CourseController::class, 'delete'] )->name('course.delete');
