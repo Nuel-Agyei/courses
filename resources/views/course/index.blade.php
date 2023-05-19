@@ -19,7 +19,7 @@
                                     <tbody>
                                         <tr>
                                             <th scope="col">Course</th>
-                                            <th scope="col">Course Description</th>
+                                            <th scope="col">Description</th>
                                             <th scope="col">Duration</th>
                                             <th scope="col">Price</th>
                                             <th scope="col">Action</th>
@@ -31,14 +31,15 @@
                                     @foreach ($course as $course)
                                         <tr>
                                             <td> {{ $course->course }} </td>
-                                            <td> {{ $course->course }} </td>
-                                            <td> {{ $course->course }} </td>
+                                            <td> {{__('This supposed to be course desription')}} </td>
+                                            <td> {{ $course->duration }} </td>
+                                            <td> {{ $course->price }} </td>
                                             <td>
                                                 <a class="btn m-1 btn-sm btn-outline-primary" href="">Edit</a>
-                                                <form method="post" action="{{ route('student.delete') }}" class="inner">
+                                                <form method="post" action="{{ route('course.delete') }}" class="inner">
                                                     @csrf
                                                     @method('DELETE')
-                                                    <input type="hidden" name="student_id" value="{{$student->id}}">
+                                                    <input type="hidden" name="course_id" value="{{$course->id}}">
                                                     <input type="submit" name="" class="btn btn-dark btn-sm" value="delete">
                                                 </form>
                                             </td>
@@ -49,9 +50,9 @@
                             </table>
                         @else
                             <h2>No children registered</h2>
-                            <a class="btn btn-sm btn-outline-primary" href="{{route('student.create')}}">Register Student</a><br>
+                            <a class="btn btn-sm btn-outline-primary" href="{{route('course.create')}}">Register for Course</a><br>
                         @endif
-                        <a class="btn btn-sm btn-outline-primary" href="{{route('student.create')}}">Register Student</a><br>
+                        <a class="btn btn-sm btn-outline-primary" href="{{route('course.create')}}">Register for Course</a><br>
 
                     </div>
                 </div>
