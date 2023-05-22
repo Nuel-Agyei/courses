@@ -50,7 +50,7 @@
 
                             </table>
                         @else
-                            <h2>No children registered</h2>
+                            <h2>No courses registered</h2>
                             <a class="btn btn-sm btn-outline-primary" href="{{route('course.create')}}">Register for Course</a><br>
                         @endif
                     </div>
