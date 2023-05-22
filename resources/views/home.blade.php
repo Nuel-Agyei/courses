@@ -41,14 +41,14 @@
                                 <h5 class="card-title">Web Development</h5>
                                 <p class="card-text">Learn the full stack for web development.</p>
                                 <p class="card-text">GH₵1000/month</p>
-                                <a href="{{route('course.create')}}" class="btn btn-outline-info">Register</a>
+                                <a href="{{route('course.create ')}}" class="btn btn-outline-info">Register</a>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      
-                      
+
+
 
                     <a class="btn btn-outline-info" href="{{ route('course.create') }}">Register for Course</a>
                 </div>
