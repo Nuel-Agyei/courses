@@ -28,8 +28,8 @@
                           <div class="col-sm-4">
                             <div class="card">
                               <div class="card-body">
-                                <h5 class="card-title">Web Development</h5>
-                                <p class="card-text">Learn the full stack for web development.</p>
+                                <h5 class="card-title">App Development</h5>
+                                <p class="card-text">Learn the full stack for app development.</p>
                                 <p class="card-text">GH₵1000/month</p>
                                 <a href="{{route('course.create')}}" class="btn btn-outline-info">Register</a>
                               </div>
@@ -38,7 +38,7 @@
                           <div class="col-sm-4">
                             <div class="card">
                               <div class="card-body">
-                                <h5 class="card-title">Web Development</h5>
+                                <h5 class="card-title">Cyber Security</h5>
                                 <p class="card-text">Learn the full stack for web development.</p>
                                 <p class="card-text">GH₵1000/month</p>
                                 <a href="{{route('course.create ')}}" class="btn btn-outline-info">Register</a>
